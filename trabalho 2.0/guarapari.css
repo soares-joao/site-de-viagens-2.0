@@ -1,0 +1,160 @@
+ /* Resetando estilos padrões */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
+}
+
+/* Cabeçalho */
+header {
+    background: #fc7425 url(https://www.tiosamimoveis.com.br/wp-content/uploads/2023/11/guarapari-cidade-saude.jpg) no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: -0.5px;
+}
+
+/* Seção principal */
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.8em;
+    color: #fc7425;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Informações sobre o destino */
+.destination-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.info h3 {
+    color: #fc7425;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.info ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.info ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.info ul li strong {
+    font-weight: bold;
+}
+
+/* Dicas */
+.tips {
+    background-color: #ffffe3;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.tips h3 {
+    color: #fc7425;
+    font-size: 2em;
+    margin-bottom: 15px;
+    
+}
+
+.tips ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.tips ul li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+/* Imagens */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #fc7425;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .destination-info {
+        flex-direction: column;
+    }
+
+    .info {
+        margin-bottom: 20px;
+    }
+}

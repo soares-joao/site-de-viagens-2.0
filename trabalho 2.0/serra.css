@@ -1,0 +1,119 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho com imagem de fundo */
+header {
+    background: url('600px-Serra_ES_manguinhos.jpeg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: -0.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteúdo principal */
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.8em;
+    color: #d6a8ff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.destination-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.info:hover {
+    transform: translateY(-10px);
+}
+
+.info h3 {
+    color: #d6a8ff;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.tips {
+    background-color: #d6a8ff61;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #d6a8ff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .destination-info {
+        flex-direction: column;
+    }
+
+    .info {
+        margin-bottom: 20px;
+    }
+}
